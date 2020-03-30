@@ -49,19 +49,27 @@
       ['link' => 'Таблица умножения', 'href' => 'table.php'],
       ['link' => 'Калькулятор',       'href' => 'calc.php']
     ];
+
+    echo '<ul>'. PHP_EOL;
+    foreach($leftMenu as $i => $arrayMenu){
+      echo "<li>"."<a href='".$leftMenu[$i]['href']."'>".$leftMenu[$i]['link']."</a></li>".PHP_EOL;
+    }
+    echo '</ul>'. PHP_EOL;
+    
+    /*
+    # Решение учителя
+    echo "<ul>";
+      foreach ($leftMenu as $item){
+        echo "<li>";
+        echo "<a href='$item[href]'>{$item[link]}</a>";
+        echo "</li>";
+      }
+    echo "</ul>";
+    */
     ?>
-    <ul>
-      <li><a href='<?= $leftMenu[0]['href'] ?>'><?= $leftMenu[0]['link'] ?></a>
-      </li>
-      <li><a href='<?= $leftMenu[1]['href'] ?>'><?= $leftMenu[1]['link'] ?></a>
-      </li>
-      <li><a href='<?= $leftMenu[2]['href'] ?>'><?= $leftMenu[2]['link'] ?></a>
-      </li>
-      <li><a href='<?= $leftMenu[3]['href'] ?>'><?= $leftMenu[3]['link'] ?></a>
-      </li>
-      <li><a href='<?= $leftMenu[4]['href'] ?>'><?= $leftMenu[4]['link'] ?></a>
-      </li>
-    </ul>
+
+
+
 
     <!-- Меню -->
     <!-- Навигация -->
