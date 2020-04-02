@@ -1,0 +1,12 @@
+{
+    "name": "yah00hay/php-spec-level1",
+    "description": "php first level project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "yah00hay",
+            "email": "yah00hay2017@gmail.com"
+        }
+    ],
+    "require": {}
+}
